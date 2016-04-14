@@ -6,7 +6,7 @@ paginate: 2 #6
 comments: true
 paginate_path: "/page/:num"
 
-baseurl: "" # change to empty string ""
+baseurl: "gianlucaciocci.github.io" # change to empty string ""
 domain_name: gianlucaciocci.com
 google_analytics: UA-52446115-1
 
