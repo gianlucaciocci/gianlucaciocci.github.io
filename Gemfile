@@ -9,3 +9,8 @@ group :development do
   gem 'jekyll', '~> 2.5.3'
   gem 'jekyll-assets'
 end
+
+group :jekyll_plugins do
+   gem "ext"
+   gem "strip"
+ end
