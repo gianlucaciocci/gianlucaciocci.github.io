@@ -22,8 +22,8 @@ title: Gianluca Ciocci
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 meta_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 meta_keywords: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-url: http://gianlucaciocci.com
-production_url: http://gianlucaciocci.com
+url: http://gianlucaciocci.github.io
+production_url: http://gianlucaciocci.github.io
 repo: https://github.com/gianlucaciocci/gianlucaciocci.github.io
 disqus_shortname: "gianlucaciocci"
 rss_path: source/
@@ -31,7 +31,7 @@ author:
   name      : Gianluca Ciocci
   image     : /assets/images/author.jpg
   email     : me@gianlucaciocci.com
-  url       : http://gianlucaciocci.com
+  url       : http://gianlucaciocci.github.io
   facebook  : http://facebook.com/gianlucaciocci.dev
   twitter   : http://twitter.com/gianlucaciocci
   instagram : http://instagram.com/gianlucaciocci.me
