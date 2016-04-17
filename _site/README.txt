@@ -17,6 +17,8 @@ Feedback, bug reports, and comments are not only welcome, but strongly encourage
 AJ
 n33.co @n33co dribbble.com/n33
 
+PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
+
 
 Credits:
 
@@ -30,4 +32,5 @@ Credits:
 		jQuery (jquery.com)
 		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
 		CSS3 Pie (css3pie.com)
-		skel (getskel.com)
+		Respond.js (j.mp/respondjs)
+		Skel (skel.io)
