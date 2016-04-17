@@ -7,9 +7,9 @@
 <html>
     {% include /head.html %}
     <body>
-        <div id="wrapper">
+        
         {% include /header.html %}
-
+        <div id="wrapper">
             <!-- Main -->
             <div id="main">
                 {{ content }}
@@ -17,5 +17,14 @@
             </div>
             {% include /footer.html %}
 		</div>
+
+        <!-- Scripts -->
+            <script src="{{ site.baseurl }}assets/js/jquery.min.js"></script>
+            <script src="{{ site.baseurl }}assets/js/jquery.scrollzer.min.js"></script>
+            <script src="{{ site.baseurl }}assets/js/jquery.scrolly.min.js"></script>
+            <script src="{{ site.baseurl }}assets/js/skel.min.js"></script>
+            <script src="{{ site.baseurl }}assets/js/util.js"></script>
+            <!--[if lte IE 8]><script src="{{ site.baseurl }}assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="{{ site.baseurl }}assets/js/main.js"></script>
 	</body>
 </html>
