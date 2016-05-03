@@ -1,4 +1,66 @@
-/*
+<!DOCTYPE HTML>
+<html>
+    	<head>
+		<title>gianlucaciocci.com - Gianluca Ciocci personal page</title>
+		
+			<meta name="description" content="Write an awesome description for your new site here. You can edit this
+ line in _config.yml. It will appear in your document head meta (for
+Google search results) and in your feed.xml site description.
+">
+		
+		<meta name="author" content="Gianluca Ciocci">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="alternate" type="application/atom+xml" title="DevOps playgroud" href="/atom.xml" />
+	</head>
+    <body>
+        
+        <!-- Header -->
+	<section id="header">
+		<header>
+			<span class="image avatar"><img src="/images/avatar.jpg" alt="" /></span>
+			<h1 id="logo"><a href="#">Gianluca Ciocci</h1>
+			<p>Your stylish,  minimalist theme!</p>
+		</header>
+		<nav id="nav">
+			<ul>
+				<li><a href="#one" class="active">About</a></li>
+				<li><a href="#two">Things I Can Do</a></li>
+				<li><a href="#three">A Few Accomplishments</a></li>
+				<li><a href="#four">Contact</a></li>
+			</ul>
+		</nav>
+		<footer>
+			<ul class="icons">
+				
+					<li><a href="https://www.linkedin.com/in/gianlucaciocci" target="_new" class="icon fa-linkedin"><span class="label">LikedIn</span></a></li>
+				
+
+				
+					<li><a href="http://github.com/gianlucaciocci" target="_new" class="icon fa-github"><span class="label">Github</span></a></li>
+				
+				
+				
+					<li><a href="http://twitter.com/gianlucaciocci" target="_new" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				
+
+				
+				<li><a href="mailto:me@gianlucaciocci.com" target="_new" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				
+
+				
+				<li><a href="/atom.xml" target="_new" class="icon fa-rss"><span class="label">RSS</span></a></li>
+				
+			</ul>
+		</footer>
+	</section>
+        <div id="wrapper">
+            <!-- Main -->
+            <div id="main">
+                /*
 	Read Only by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
@@ -118,3 +180,58 @@
 	});
 
 })(jQuery);
+
+            </div>
+            <!-- Footer -->
+<section id="footer">
+	<div class="container">
+		<ul class="copyright">			
+			<li>&copy; 2016 Gianluca Ciocci. All rights reserved.</li>
+		</ul>
+	</div>
+</section>
+		</div>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollzer.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/skel.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="assets/js/main.js"></script>
+	</body>
+</html>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77272252-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+<!--
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl =
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'gianlucaciocci']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+-->

@@ -1,19 +1,39 @@
 # Site settings
-title: Gianluca Ciocci
+blogtitle: "DevOps playgroud" 
 author:
-  name: Gianluca Ciocci
-  email: me@gianlucaciocci.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  name: "Gianluca Ciocci"
+  email: "me@gianlucaciocci.com"
+  github: "gianlucaciocci"  
+  twitter: "gianlucaciocci"  
+  pinterest: ""  
+  linkedin: "gianlucaciocci"  
+  rss: "atom.xml"
+  resume: ""  
+  bio: "Your stylish,  minimalist theme!"  
+  email_md5: "md5ofemail"
+
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://gianlucaciocci.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
-
-highlighter: rouge
+google_analytics: "gianlucaciocci"
+disquis: "gianlucaciocci"
 
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+
+#defaults configuration
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      title: "gianlucaciocci.com - Gianluca Ciocci personal page"
+      description: > #default website description
+        Write an awesome description for your new site here. You can edit this
+         line in _config.yml. It will appear in your document head meta (for
+        Google search results) and in your feed.xml site description.
+      comments: true
+
+

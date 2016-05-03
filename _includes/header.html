@@ -3,8 +3,7 @@
 		<header>
 			<span class="image avatar"><img src="{{ site.baseurl }}/images/avatar.jpg" alt="" /></span>
 			<h1 id="logo"><a href="#">{{ site.author.name }}</h1>
-			<p>I got reprogrammed by a rogue AI<br />
-			and now I'm totally cray</p>
+			<p>{{ site.author.bio }}</p>
 		</header>
 		<nav id="nav">
 			<ul>
@@ -16,11 +15,25 @@
 		</nav>
 		<footer>
 			<ul class="icons">
-				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-				<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-				<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-				<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				{% if site.author.linkedin %}
+					<li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_new" class="icon fa-linkedin"><span class="label">LikedIn</span></a></li>
+				{% endif %}
+
+				{% if site.author.github %}
+					<li><a href="http://github.com/{{ site.author.github }}" target="_new" class="icon fa-github"><span class="label">Github</span></a></li>
+				{% endif %}
+				
+				{% if site.author.twitter %}
+					<li><a href="http://twitter.com/{{ site.author.twitter }}" target="_new" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				{% endif %}
+
+				{% if site.author.email %}
+				<li><a href="mailto:{{ site.author.email }}" target="_new" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				{% endif %}
+
+				{% if site.author.rss %}
+				<li><a href="{{ site.baseurl }}/{{ site.author.rss }}" target="_new" class="icon fa-rss"><span class="label">RSS</span></a></li>
+				{% endif %}
 			</ul>
 		</footer>
 	</section>
