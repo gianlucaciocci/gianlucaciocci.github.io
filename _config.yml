@@ -12,5 +12,8 @@ url: "http://gianlucaciocci.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
+highlighter: rouge
+
+
 # Build settings
 markdown: kramdown
