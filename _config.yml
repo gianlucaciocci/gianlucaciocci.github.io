@@ -9,7 +9,7 @@ author:
   linkedin: "gianlucaciocci"  
   rss: "atom.xml"
   resume: ""  
-  bio: "Your stylish,  minimalist theme!"  
+  bio: "DevOps playground. Just take it as it is" #"Your stylish,  minimalist theme!"  
   email_md5: "md5ofemail"
 
 baseurl: "" # the subpath of your site, e.g. /blog/
