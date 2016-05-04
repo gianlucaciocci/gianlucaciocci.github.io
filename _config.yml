@@ -1,5 +1,5 @@
 # Site settings
-blogtitle: "DevOps playground. Just take it as it is" 
+blogtitle: "Sketching ideas."
 author:
   name: "Gianluca Ciocci"
   email: "me@gianlucaciocci.com"
@@ -9,7 +9,7 @@ author:
   linkedin: "gianlucaciocci"  
   rss: "atom.xml"
   resume: ""  
-  bio: "DevOps playground. Just take it as it is" #"Your stylish,  minimalist theme!"  
+  bio: "Sketching notes. Just take it as it is" #"DevOps playground. Just take it as it is"  
   email_md5: "md5ofemail"
 
 baseurl: "" # the subpath of your site, e.g. /blog/

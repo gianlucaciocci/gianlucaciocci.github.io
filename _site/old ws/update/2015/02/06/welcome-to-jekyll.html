@@ -14,7 +14,7 @@ Google search results) and in your feed.xml site description.
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<link rel="alternate" type="application/atom+xml" title="DevOps playgroud" href="/atom.xml" />
+		<link rel="alternate" type="application/atom+xml" title="Sketching ideas." href="/atom.xml" />
 	</head>
     <body>
         
@@ -22,37 +22,38 @@ Google search results) and in your feed.xml site description.
 	<section id="header">
 		<header>
 			<span class="image avatar"><img src="/images/avatar.jpg" alt="" /></span>
-			<h1 id="logo"><a href="#">Gianluca Ciocci</h1>
-			<p>Your stylish,  minimalist theme!</p>
+			<h1 id="logo">Gianluca Ciocci</h1>
+			<p>Sketching notes. Just take it as it is</p>
 		</header>
 		<nav id="nav">
 			<ul>
-				<li><a href="#one" class="active">About</a></li>
-				<li><a href="#two">Things I Can Do</a></li>
-				<li><a href="#three">A Few Accomplishments</a></li>
-				<li><a href="#four">Contact</a></li>
+				<li><a href="#one" class="active">What Is This All About?</a></li>
+				<li><a href="#two">About me</a></li>
+				<li><a href="#three">Things I Can Do</a></li>
+				<li><a href="#four">A Few Accomplishments</a></li>
+				<li><a href="#five">Some Writing</a></li>
 			</ul>
 		</nav>
 		<footer>
 			<ul class="icons">
 				
-					<li><a href="https://www.linkedin.com/in/gianlucaciocci" target="_new" class="icon fa-linkedin"><span class="label">LikedIn</span></a></li>
+					<li><a href="https://www.linkedin.com/in/gianlucaciocci" target="_blank" class="icon fa-linkedin"><span class="label">LikedIn</span></a></li>
 				
 
 				
-					<li><a href="http://github.com/gianlucaciocci" target="_new" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="http://github.com/gianlucaciocci" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
 				
 				
 				
-					<li><a href="http://twitter.com/gianlucaciocci" target="_new" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-				
-
-				
-				<li><a href="mailto:me@gianlucaciocci.com" target="_new" class="icon fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="http://twitter.com/gianlucaciocci" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 				
 
 				
-				<li><a href="/atom.xml" target="_new" class="icon fa-rss"><span class="label">RSS</span></a></li>
+				<li><a href="mailto:me@gianlucaciocci.com" target="_blank" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				
+
+				
+				<li><a href="/atom.xml" target="_blank" class="icon fa-rss"><span class="label">RSS</span></a></li>
 				
 			</ul>
 		</footer>
