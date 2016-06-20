@@ -9,7 +9,7 @@ author:
   linkedin: "gianlucaciocci"  
   rss: "atom.xml"
   resume: ""  
-  bio: "Sketching notes. Just take it as it is" #"DevOps playground. Just take it as it is"  
+  bio: "Computers perform repetitive tasks, people solve problems!"#"Sketching notes. Just take it as it is" "DevOps playground. Just take it as it is"  
   email_md5: "md5ofemail"
 
 baseurl: "" # the subpath of your site, e.g. /blog/
