@@ -1,5 +1,6 @@
 # Site settings
-blogtitle: "Sketching ideas."
+blogtitle: "Sketching ideas"
+blogsubtitle: "Blogging taking notes"
 author:
   name: "Gianluca Ciocci"
   email: "me@gianlucaciocci.com"
@@ -29,11 +30,16 @@ defaults:
       path: ""
     values:
       layout: "default"
-      title: "gianlucaciocci.com - Gianluca Ciocci personal page"
+      title: "gianlucaciocci.com - Gianluca Ciocci personal blog"
       description: > #default website description
         Write an awesome description for your new site here. You can edit this
          line in _config.yml. It will appear in your document head meta (for
         Google search results) and in your feed.xml site description.
       comments: true
 
+
+paginate: 5
+paginate_path: "/blog/page:num/#five"
+gems:
+  - jekyll-paginate
 
