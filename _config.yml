@@ -1,45 +1,76 @@
-# Site settings
-blogtitle: "Sketching ideas"
-blogsubtitle: "Blogging taking notes"
-author:
-  name: "Gianluca Ciocci"
-  email: "me@gianlucaciocci.com"
-  github: "gianlucaciocci"  
-  twitter: "gianlucaciocci"  
-  pinterest: ""  
-  linkedin: "gianlucaciocci"  
-  rss: "atom.xml"
-  resume: ""  
-  bio: "Computers perform repetitive tasks, people solve problems!"#"Sketching notes. Just take it as it is" "DevOps playground. Just take it as it is"  
-  email_md5: "md5ofemail"
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://gianlucaciocci.com" # the base hostname & protocol for your site
+# Site title
+title: "{REMARKED}"
+
+# A description of your site for social meta tag, search engines, and feed.xml
+description: "Blogging taking notes"
+
+# Tagline near the site title
+tagline: "Thoughts, notes and ideas."
+
+# The subpath of your site, e.g. /blog, for generating urls
+baseurl:
+
+sass:
+  sass_dir: _sass
+
+# The base hostname & protocol of your site for where absolute urls are needed
+url: "http://gianlucaciocci.com"
+
+# Site navigation - each item must have a title and a url.
+navigation:
+- text: Home
+  url: /
+- text: About
+  url: /about/
+- text: Archives
+  url: /tags/
+
+# The shortname for your Disqus site to enable comments.
+disqus:
+
+# Author information - author info at the bottom of the post
+author_name: "Gianluca Ciocci"
+author_bio: "Gianluca is an IT tech lead consultant spending most of his time on “getting things done” with automation as he believes that computers perform repetitive tasks and people solve problems."
+author_url:  "http://gianlucaciocci.com"
+author_location: "London, UK"
+author_image: /images/authorimage.jpg
+
+# Sidebar Add banner
+banner_url: "http://meetup.com/entdevops"
+banner_image: images/banner.jpeg
+
+# Sidebar newsletter widget - add your form action url for MailChimp signup form here
+mailchimp_url: #"//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
+
+# Social links in the site footer
+twitter_username: "gianlucaciocci"
+facebook_username:
+googleplus_username:
+github_username: "gianlucaciocci"
+codepen_username:
+dribbble_uername:
+medium_username:
+instagram_username:
+pinterest_username:
+linkedin_username: "gianlucaciocci"
+email_username: "me@gianlucaciocci.com"
+disqus: "gianlucaciocci"
 google_analytics: "gianlucaciocci"
-disquis: "gianlucaciocci"
 
+# http://jekyllrb.com/docs/pagination/
+paginate: 5
+paginate_path: '/blog/page:num/'
+gems: [jekyll-paginate]
 
-# Build settings
+permalink: pretty
 markdown: kramdown
 highlighter: rouge
-
-#defaults configuration
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-      title: "gianlucaciocci.com - Gianluca Ciocci personal blog"
-      description: > #default website description
-        Write an awesome description for your new site here. You can edit this
-         line in _config.yml. It will appear in your document head meta (for
-        Google search results) and in your feed.xml site description.
-      comments: true
-
-
-paginate: 5
-paginate_path: "/blog/page:num/#five"
-gems:
-  - jekyll-paginate
-
+kramdown:
+    auto_ids: false
