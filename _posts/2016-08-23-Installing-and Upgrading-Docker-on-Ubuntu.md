@@ -27,7 +27,7 @@ Read up till the end of this note before running any command on your machine....
 
 ## Prerequisites
 
-Docker requires 64-bit OS installations and the kernel version must be at minimun 3.10. Older versions of the kernel lack of some features required to run docker engine among which Namespaces, CGroups and Capabilities.
+Docker requires 64-bit OS installations and the kernel version must be at minimum 3.10. Older versions of the kernel lack of some features required to run docker engine among which Namespaces, CGroups and Capabilities.
 
 Said that, first thing fist, we should check the kernel version using the **uname** command
 
@@ -40,7 +40,7 @@ $ uname -r
 
 Before move on with the installation of the docker engine, we want to make sure that Docker is not already up and running on our system if you are not using a freshly made machine.
 
-Running the following commands will tell you if Docker is already on the system but before that run **sudo su** in your teminal to avoid the annoing thing to put **sudo** in front of every priviledge command (commands that need root) and insert your password. If you are not allowed to do it in your environment just remember that if you get "*permission denied*" when you run docker commands just slap **sudo** in front and you should be good to execute it.
+Running the following commands will tell you if Docker is already on the system but before that run **sudo su** in your terminal to avoid the annoying thing to put **sudo** in front of every privilege command (commands that need root) and insert your password. If you are not allowed to do it in your environment just remember that if you get "*permission denied*" when you run docker commands just slap **sudo** in front and you should be good to execute it.
 
 ```
 $ service docker-engine status
@@ -61,7 +61,7 @@ lxc-docker: unrecognized service
 > **What is going on here? Why do I have to look for docker.io and lxc-docker packages?**
 Depending on the version of Ubuntu you could find legacy packages installed under the name docker, so Docker project had to change slightly the name of their packages in docker.io (docker version 1.0) and lxc-docker (docker version 1.4) to coexist with this legacy baggage.
 
-In my machine it's all clear so I can proceed installing the lates version available of Docker, but..
+In my machine it's all clear so I can proceed installing the latest version available of Docker, but..
 **Note**: If you previously installed Docker using **APT**, make sure you update your APT sources to the new Docker repository and purge any older repositories with the **apt-get purge** command
 
 ```
@@ -74,7 +74,7 @@ $ apt-get purge "lxc-docker"
 
 We need to make sure that APT package manager on our machine works with **https** method and that the latest version of CA certificates are installed properly.
 
-```
+``` shell
 $ apt-get update
 $ apt-get install apt-transport-https ca-certificates
 ```
@@ -124,11 +124,11 @@ $ docker-engine:
 
 ```
 
-if the result of the **apt-cahe policy** command is like the one above, your ubuntu machine is configured properly to pull from the right docker repository.
+if the result of the **apt-cache policy** command is like the one above, your ubuntu machine is configured properly to pull from the right docker repository.
 
 ## Ubuntu prerequisites
 
-if you are installing docker engine on Ubuntu Xenial, Wily or Trusty, it's reccomended to install the **linux-image-extra-** kernel packages to allow using **aufs**, the docker default storage driver on Ubuntu.
+if you are installing docker engine on Ubuntu Xenial, Wily or Trusty, it's recommended to install the **linux-image-extra-** kernel packages to allow using **aufs**, the docker default storage driver on Ubuntu.
 
 ```
 apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
@@ -154,7 +154,7 @@ The following packages have unmet dependencies:
 E: Unable to correct problems, you have held broken packages.
 
 ```
-The message is telling us that `docker-engine` installatation has dependecy on libraries with versions not available for Ubuntu Xenial.  
+The message is telling us that `docker-engine` installation has dependency on libraries with versions not available for Ubuntu Xenial.  
 For example: the docker engine 1.12.1 has a dependency on the library init-system-helpers version >= 1.18. This is absolutely not a problem, the real problem is that the latest version available for Ubuntu 16.04 is 1.14. We will never get docker installed in this way.
 
 Two potential workaround that worked for me are:
@@ -162,7 +162,7 @@ Two potential workaround that worked for me are:
 -  **The easy way** - not a best practice and the team at Docker are in the process of phasing out the support to the "quick & easy install" script.  
 
 ```
-   $ wget -qO- https://get.docker.com/ | sh
+$ wget -qO- https://get.docker.com/ | sh
 ```
 - **With a bit of more research way** - you can change the ATP repository entry to the Docker repositories for Ubuntu Trusty 
     
@@ -187,7 +187,7 @@ Running **apt-cache policy** on all those dependencies we can see that our Ubunt
     $ apt-get install docker-engine  
 ```
 
-And by magic we have our docker engine installed. Run **docker -v** to chek the version and we should see 1.12.1.
+And by magic we have our docker engine installed. Run **docker -v** to check the version and we should see 1.12.1.
 
 Job done.
 
