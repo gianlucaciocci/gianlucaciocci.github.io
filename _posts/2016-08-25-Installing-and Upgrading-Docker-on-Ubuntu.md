@@ -40,12 +40,14 @@ Before move on with the installation of the docker engine, we want to make sure 
 
 Running the following commands will tell you if Docker is already on the system but before that run **sudo su** in your terminal to avoid the annoying thing to put **sudo** in front of every privilege command (commands that need root) and insert your password. If you are not allowed to do it in your environment just remember that if you get "*permission denied*" when you run docker commands just slap **sudo** in front and you should be good to execute it.
 
+
 ```
 $ service docker-engine status
 docker-engine: unrecognized service
 ```
 
 Checking for older version of the docker engine as from verson 1.8 the name of the package changed in **docker-engine**
+
 ```
 $ service docker.io status
 docker.io: unrecognized service
