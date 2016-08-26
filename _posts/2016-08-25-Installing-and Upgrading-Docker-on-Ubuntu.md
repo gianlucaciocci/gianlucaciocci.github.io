@@ -42,18 +42,18 @@ Running the following commands will tell you if Docker is already on the system 
 
 
 ```
-$ service docker-engine status
-docker-engine: unrecognized service
+    $ service docker-engine status
+    docker-engine: unrecognized service
 ```
 
 Checking for older version of the docker engine as from verson 1.8 the name of the package changed in **docker-engine**
 
 ```
-$ service docker.io status
-docker.io: unrecognized service
+    $ service docker.io status
+    docker.io: unrecognized service
 
-$ service lxc-docker status
-lxc-docker: unrecognized service
+    $ service lxc-docker status
+    lxc-docker: unrecognized service
 ```
 
 > **What is going on here? Why do I have to look for docker.io and lxc-docker packages?**
@@ -63,18 +63,18 @@ In my machine it's all clear so I can proceed installing the latest version avai
 **Note**: If you previously installed Docker using **APT**, make sure you update your APT sources to the new Docker repository and purge any older repositories with the **apt-get purge** command
 
 ```
-$ apt-get purge "docker.io"
+    $ apt-get purge "docker.io"
 
-$ apt-get purge "lxc-docker"
+    $ apt-get purge "lxc-docker"
 ```
 
 ## Updating our APT sources
 
 We need to make sure that APT package manager on our machine works with **https** method and that the latest version of CA certificates are installed properly.
 
-``` shell
-$ apt-get update
-$ apt-get install apt-transport-https ca-certificates
+```
+    $ apt-get update
+    $ apt-get install apt-transport-https ca-certificates
 ```
 
 Next we have to add the GNU Privacy guard key ( [GPG](https://www.gnupg.org/) ) for the official Docker repository to the system:
