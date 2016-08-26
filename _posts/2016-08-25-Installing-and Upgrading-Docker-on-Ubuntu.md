@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Installing and upgrading to Docker 1.12
-date: 2016-08-24
+title: Installing Docker 1.12
+date: 2016-08-25
 banner_image: docker.png
 tags: [Containers, Docker]
 ---
 
 Docker can be considered a growing container technology. Behind it there is what I consider one of the most innovative company of the century ( [Docker Inc](https://www.docker.com/company) ) and an amazing community improving and mantaining this interesting technology.  
 
-As I wanted to try out the new features introduced by the latest version of docker platform, I thought to write down few notes as memorandum. My playgroung is an Ubuntu Server 16.04 machine on Azure and the docker engine installation hasn't been slick as I thought.
+As I wanted to try out the new features introduced by the latest version of docker platform, I thought to write down few notes as memorandum. My playgroung is an Ubuntu Server 16.04 machine on Azure and the docker engine.
 
 Let's copy and paste few information from the Docker official documentation to start with and set the scene.
 
@@ -20,8 +20,6 @@ Docker is supported on the following Ubuntu operating system versions:
 
 > **Note from the official documentation**: Ubuntu Utopic 14.10 and 15.04 exist in Docker's *`APT`* repository but no longer officially supported.
 
-REMINDER TO MYSELF:  
-Read up till the end of this note before running any command on your machine....if you don't want waste time.
 
 <!--more-->
 
@@ -47,13 +45,11 @@ $ service docker-engine status
 docker-engine: unrecognized service
 ```
 
-Checking for older version of the docker engine
+Checking for older version of the docker engine as from verson 1.8 the name of the package changed in **docker-engine**
 ```
 $ service docker.io status
 docker.io: unrecognized service
-```
 
-```
 $ service lxc-docker status
 lxc-docker: unrecognized service
 ```
@@ -136,61 +132,16 @@ apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
 
 # Install Docker engine
 
-Installing the docker engine its very easy, you run **apt-get install docker-engine** and BOOM! 
+Installing the docker engine its very easy, you run **apt-get install docker-engine** and you are done! 
 
-```
-Some packages could not be installed. This may mean that you have
-requested an impossible situation or if you are using the unstable
-distribution that some required packages have not yet been created
-or been moved out of Incoming.
-The following information may help to resolve the situation:
+We have our docker engine installed. Run **docker -v** to check the version and we should see 1.12.1.
 
-The following packages have unmet dependencies:
- docker-engine : Depends: init-system-helpers (>= 1.18~) but 1.14 is to be installed
-                 Depends: lsb-base (>= 4.1+Debian11ubuntu7) but 4.1+Debian11ubuntu6.1 is to be installed
-                 Depends: libdevmapper1.02.1 (>= 2:1.02.97) but 2:1.02.77-6ubuntu2 is to be installed
-                 Depends: libltdl7 (>= 2.4.6) but 2.4.2-1.7ubuntu1 is to be installed
-                 Depends: libsystemd0 but it is not installable
-E: Unable to correct problems, you have held broken packages.
+Job done.
 
-```
-The message is telling us that `docker-engine` installation has dependency on libraries with versions not available for Ubuntu Xenial.  
-For example: the docker engine 1.12.1 has a dependency on the library init-system-helpers version >= 1.18. This is absolutely not a problem, the real problem is that the latest version available for Ubuntu 16.04 is 1.14. We will never get docker installed in this way.
-
-Two potential workaround that worked for me are:
-
--  **The easy way** - not a best practice and the team at Docker are in the process of phasing out the support to the "quick & easy install" script.  
+PS: Another way to install Docker is using the "quick & easy install" script as following. Until the team at Docker will support this way, I think I will use it.
 
 ```
 $ wget -qO- https://get.docker.com/ | sh
 ```
-- **With a bit of more research way** - you can change the ATP repository entry to the Docker repositories for Ubuntu Trusty 
-    
-    The reason of pointing to the Trusty repository is down to available versions for the dependency packages. 
-
-    We already saw that Xenial dependencies are off the table, so if you check the documentation of the packages for the [Wily version](https://apt.dockerproject.org/repo/dists/ubuntu-wily/main/binary-amd64/Packages) you will find the following:
-
-    - Depends: iptables, init-system-helpers (>= 1.18~), lsb-base (>= 4.1+Debian11ubuntu7), perl, libapparmor1 (>= 2.6~devel), libc6 (>= 2.14), libdevmapper1.02.1 (>= 2:1.02.99), libsqlite3-0 (>= 3.5.9)
-        wily is for ubuntu 15.04 (i think)
-    
-    Still not quite right.
-
-    Checking what version the dependencies have to be for [Ubuntu 14.04 (Trusty)](https://apt.dockerproject.org/repo/dists/ubuntu-trusty/main/binary-amd64/Packages), it shows:
-    - Depends: iptables, init-system-helpers (>= 1.13~), sysv-rc (>= 2.88dsf-24) file-rc (>= 0.8.16), perl, libapparmor1 (>= 2.6~devel), libc6 (>= 2.14), libdevmapper1.02.1 (>= 2:1.02.63), libsqlite3-0 (>= 3.5.9)  
-    
-Running **apt-cache policy** on all those dependencies we can see that our Ubuntu 16.04 complies with the dependency version requests and we can proceed installing docker-engine as following:
-    
-```
-    $ rm /etc/apt/sources.list.d/docker.list  
-    $ echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" | sudo tee /etc/apt/sources.list.d/docker.list  
-    $ apt-get update  
-    $ apt-get install docker-engine  
-```
-
-And by magic we have our docker engine installed. Run **docker -v** to check the version and we should see 1.12.1.
-
-Job done.
-
-
 
 
