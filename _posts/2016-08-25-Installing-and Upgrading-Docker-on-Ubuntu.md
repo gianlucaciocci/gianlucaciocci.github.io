@@ -46,20 +46,17 @@ Running the following commands will tell you if Docker is already on the system 
     docker-engine: unrecognized service
 ```
 
-Checking for older version of the docker engine as from verson 1.8 the name of the package changed in **docker-engine**
+Checking for older version of the docker engine as from verson 1.8 the name of the package changed in **docker-engine**.  
 
 ```
-    $ service docker.io status
-    docker.io: unrecognized service
+$ service docker.io status
+docker.io: unrecognized service
 
-    $ service lxc-docker status
-    lxc-docker: unrecognized service
+$ service lxc-docker status
+lxc-docker: unrecognized service
 ```
 
-> **What is going on here? Why do I have to look for docker.io and lxc-docker packages?**
-Depending on the version of Ubuntu you could find legacy packages installed under the name docker, so Docker project had to change slightly the name of their packages in docker.io (docker version 1.0) and lxc-docker (docker version 1.4) to coexist with this legacy baggage.
-
-In my machine it's all clear so I can proceed installing the latest version available of Docker, but..
+In my machine it's all clear so I can proceed installing the latest version available of Docker, but..  
 **Note**: If you previously installed Docker using **APT**, make sure you update your APT sources to the new Docker repository and purge any older repositories with the **apt-get purge** command
 
 ```
