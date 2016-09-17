@@ -31,6 +31,8 @@ navigation:
   url: /about/
 - text: Archives
   url: /tags/
+- text: Enterprise DevOps Community
+  url: /entdevops/
 
 # The shortname for your Disqus site to enable comments.
 disqus:
@@ -48,7 +50,7 @@ banner_image: images/banner.jpeg
 
 # Sidebar newsletter widget - add your form action url for MailChimp signup form here
 mailchimp_url: #"//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
-
+endevops_enroll_url:
 # Social links in the site footer
 twitter_username: "gianlucaciocci"
 facebook_username:

@@ -20,6 +20,23 @@
     </section><!-- .widget-text -->
     {% endif %}
 
+{% if site.endevops_enroll_url %}
+    <section class="widget widget-newsletter">
+        <h2 class="widget-title">Enterprise DevOps: Get in!</h2>
+        <!-- Begin Enterprise DevOps Signup Form -->
+        <div id="mc_embed_signup">
+            <form action="{{ site.endevops_enroll_url }}" method="post" id="subscribeform" name="subscribeform" class="validate">
+                <div id="mc_embed_signup_scroll">
+                    <label for="mce-EMAIL">Add a valid email to join Enterprise DevOps Community on Slack</label>
+                    <input type="email" value="" name="email1" class="email" id="edo-EMAIL" placeholder="email address" required>
+                    <div class="clear"><input type="submit" value="Reach us on Slack" name="subscribe" onClick="post_email();" id="mc-embedded-subscribe" class="button" ></div>
+                </div>
+            </form>
+        </div>
+        <!--End mcentdevops signin-->
+    </section><!-- .widget -->
+    {% endif %}
+
     {% if site.mailchimp_url %}
     <section class="widget widget-newsletter">
         <h2 class="widget-title">{{ site.title}} Newsletter</h2>
