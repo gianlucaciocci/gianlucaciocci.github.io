@@ -14,7 +14,7 @@ Our Slack channel is the best place to get help, connect with our community of u
 <div id="mc_embed_signup_scroll" align="center" class="clear">
 <input type="email" value="" name="email1" class="email" id="edo-EMAIL" placeholder="email address" required>  
 <input type="submit" value="GET MY INVITE" name="subscribe" onClick="post_email();" id="mc-embedded-subscribe" class="button" >
-<label id="lblresult" for="mce-EMAIL"></label>
+<p><label id="lblresult" for="mce-EMAIL"></label></p>
 </div>
 </form>
 
