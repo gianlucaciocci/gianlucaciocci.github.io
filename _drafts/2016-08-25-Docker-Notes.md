@@ -23,6 +23,10 @@ tags: [Docker]
 - Containers have an outstanding fit for non persistent workload
 - Container by design can persist data. starting and stopping containers doesn't affect persistence, but if you remove them you remove the data as well. If you persist your data in a different volume or other persistent store you won't lose them.
 - Containers are immutable
+- ports on which docker operates:
+    - docker engine port 2375
+    - docker secure engine port 2376
+    - docker swarm 2377
 
 
 
@@ -164,4 +168,113 @@ Vocabulary:
 Swarm architecture:
 - 3 managers
 - 3 workers
+
+To initialize a swarm on mng1
+
+* --listen-addr >> better be specific an tell on wich ip it will operate on
+
+```
+docker swarm init --listen-addr <ip addr>:2377
+```
+The output of running this command is:
+
+```
+Swarm initialized: current node (aydkg79x6o5vxg6shj9kiuqrd) is now a manager.
+
+To add a worker to this swarm, run the following command:
+
+    docker swarm join \
+    --token SWMTKN-1-5iu43hkxeu0fl2ilj9pgx6drvmxjjlnrz9trqh5ifqwzwybcdb-dccbjhxm3kww90imnsz6q4ehk \
+    10.1.0.4:2377
+
+To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
+```
+
+Running `docker info` we can see that our swar is active and the current host has joined the swarm as a manager.  
+Manger nodes are also worker nodes. In reality we don't have have 2 nodes, but its just a node doing 2 jobs.
+
+```
+Swarm: active
+ NodeID: aydkg79x6o5vxg6shj9kiuqrd
+ Is Manager: true
+ ClusterID: 56zowu83gclplln2r7oizo90y
+ Managers: 1
+ Nodes: 1
+
+```
+
+Use `docker swarm join-token manger | worker` to get the token for other managers or workers to join the swarm. 
+
+With `docker node ps` you list all the swarm nodes. Only the leader manager can make changes to the swarm, but you can run commands from every manager as ther will redirect it to the leader.
+
+## Services
+
+it's one of the majour contruct in Docker 1.12.
+Services support the creation of large scale clustering in a declarative Desired-Actual state configuration way, making sure that actual matching desidered.  
+
+We are managing services with the following sub-commands
+
+```
+$ docker service <create | inspect | ls | rm | scale | update>
+```
+
+docker swarm will keep your cluster always in the shape that you configured as "desired state". If one of the machine part of the swarm is not available anymore, docker swarm will instantiate other istances accross the remaining machines.
+
+
+Native container-aware load balancing called "routing mesh", that you can mix with non-container aware load balancers
+
+To scale the docker service replica
+
+```
+$ docker service scale <name of the servie>:<n of replicas instances>
+```
+This command is just an alias of `docker service update --replicas`
+
+
+To delete a service in our swarm
+
+```
+$ docker service rm <name of the service>
+```
+
+
+### Overlay networks - ???
+
+To create an overlay network `-d overlay`
+
+```
+$ docker network create -d overlay <network name>
+```
+
+To list all the created networks
+```
+$ docker network ls
+```
+
+Docker example voting app [here](https://github.com/docker/example-voting-app)
+
+
+## Rolling update
+
+Docker service suppors us in rolling out update in to the cluster we have to confire two service update parameter:
+- update-paralellism >> how many containers will be updated in block
+- update-duration >> waiting time before update another block
+
+This is the command to update a container to version v2
+
+```
+$ docker service update --image <new version image name> --update-paralellism 2 --update-delay 15s <name of the service>
+```
+
+## Stacks and DABs (Distributed Attributes Bundles)
+
+Experimental build 1.12 or later
+
+- Stack >> application comprising multiple services
+- DAB file >> configuration files for deploying Stacks
+- new `docker stack` command
+
+To install docker from the experimental stream
+1. binaries on *http://github.com/docker/docker/tree/master/experimental*
+2. for majour distributions ` wget -qO https://experimental.docker.com/ | sh`
 
