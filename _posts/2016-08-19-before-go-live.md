@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Just gone live"
+title:  Just gone live
 date:   2016-08-19
 banner_image: before-you-go-live.png
 tags: [Coming soon]
