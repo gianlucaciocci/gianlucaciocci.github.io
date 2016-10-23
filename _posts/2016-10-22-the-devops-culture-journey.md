@@ -7,7 +7,7 @@ tags: [DevOps, Culture]
 ---
 
 
-This week I've had the pleasure of running three times a session at the [DevOps focus group](http://devopsfocusgroups.com/) in London titled **"Culture eats strategy for breakfast"**.
+This week I've had the pleasure of running a session at the [DevOps focus group](http://devopsfocusgroups.com/) in London titled **"Culture eats strategy for breakfast"**.
 
 I want to thank you all the attendees as I had fun having an energetic conversation about DevOps culture. It's an interesting topic that touches the entire organization and it dosen't matter if you are an C-level manager, a developer or an ops guy, everyone feels the same.  
 
