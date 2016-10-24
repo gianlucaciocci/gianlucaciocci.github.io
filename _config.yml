@@ -12,7 +12,7 @@ title: "{REMARKED}"
 description: "Blogging taking notes"
 
 # Tagline near the site title
-tagline: "Thoughts, notes and ideas."
+tagline: "Thoughts, notes and ideas"
 
 # The subpath of your site, e.g. /blog, for generating urls
 baseurl:
