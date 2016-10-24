@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "DevOps: a culture journey"
-date:   2016-10-21
+date:   2016-10-22
 banner_image: rowing.jpg
 tags: [DevOps, Culture]
 ---
@@ -64,7 +64,10 @@ Focusing on the **why** rather on the **what**, gives you the opportunity to thi
 I've collected a few thoughts from the session, on how to make sustainable culture changes and avoiding getting stuck in the vortex of fear and resistance. You'll find below a list of "commandments" that could be useful to share with friends and colleagues.
 
 What is important to remember is that we are on a journey done a day at a time. To start getting great results in a true DevOps fashion, might take a couple of years.
- the strategic goals of the enterprise.
+
+Summing up what came out from the focus group:
+
+- Cultural change must not be done in isolation, but tightly-linked to the strategic goals of the enterprise.
 - Start small, setting out an adaptive culture rather a big bang change approach: let culture evolve with the strategy.
 - Check where you are. Monitor and assess frequently the gap between the current and the desired culture.
 - Formulate values that are meaningful and really do drive organisational and behavioural change.
