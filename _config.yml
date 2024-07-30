@@ -20,6 +20,19 @@ baseurl:
 sass:
   sass_dir: _sass
 
+plugins: 
+ - jekyll-paginate
+ - jekyll-seo-tag
+ - jekyll-sitemap
+ - jekyll-feed
+ - jekyll-redirect-from
+ - jemoji
+ - jekyll-mentions
+
+assets:
+ - favicon: "/assets/favicon"
+ - favicon-dark: "/assets/favicondark"
+
 # The base hostname & protocol of your site for where absolute urls are needed
 url: "http://gianlucaciocci.com"
 
@@ -33,8 +46,8 @@ navigation:
   url: /tags/
 - text: Cheatsheets
   url: /cheatsheets/
-- text: Enterprise DevOps Community
-  url: /entdevops/
+# - text: Enterprise DevOps Community
+#   url: /entdevops/
 
 # The shortname for your Disqus site to enable comments.
 # disqus:
@@ -47,8 +60,8 @@ author_location: "London, UK"
 author_image: /images/authorimage.jpg
 
 # Sidebar Add banner
-banner_url: "http://meetup.com/entdevops"
-banner_image: images/banner.jpeg
+banner_url: #"http://meetup.com/entdevops"
+banner_image: #images/banner.jpeg
 
 # Sidebar newsletter widget - add your form action url for MailChimp signup form here
 mailchimp_url: #"//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
@@ -71,7 +84,7 @@ google_analytics: "gianlucaciocci"
 # http://jekyllrb.com/docs/pagination/
 paginate: 5
 paginate_path: '/blog/page:num/'
-plugins: [jekyll-paginate]
+
 
 permalink: pretty
 markdown: kramdown
