@@ -711,6 +711,27 @@ a.archive-top-link:hover {
     text-transform: uppercase;
 }
 
+.widget-toc a {
+    background-color: $tundora;
+    color: $silver;
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin: 0 4px 8px 0;
+    padding: 6px 8px;    
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition:    all 0.3s;
+    transition:         all 0.3s;
+}
+
+.widget-toc a:hover {
+    background-color: $picton-blue;
+    color: $white;
+}
+
+
 .widget-tags a {
     background-color: $tundora;
     color: $silver;

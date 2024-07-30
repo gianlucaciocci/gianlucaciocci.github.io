@@ -3,6 +3,7 @@ layout: post
 title: Installing Docker 1.12
 date: 2016-08-25
 banner_image: docker.png
+tableofcontent: true
 tags: [Containers, Docker]
 ---
 

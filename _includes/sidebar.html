@@ -1,5 +1,14 @@
 <aside class="sidebar">
 
+    {% if page.tableofcontent %}
+    <section class="widget widget-toc">
+        <h2 class="widget-title">TABLE OF CONTENT</h2>
+        <div class="tagcloud">
+           
+        </div>
+    </section><!-- .widget -->
+    {% endif %}
+
     {% if site.author_bio and site.author_name %}
     <section class="widget widget-text">
         <h2 class="widget-title">About {{ site.author_name }}</h2>

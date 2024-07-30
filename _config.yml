@@ -29,9 +29,8 @@ plugins:
  - jemoji
  - jekyll-mentions
 
-assets:
- - favicon: "/assets/favicon"
- - favicon-dark: "/assets/favicondark"
+# BLOG POST CONFIG
+excerpt_separator: <!--more-->
 
 # The base hostname & protocol of your site for where absolute urls are needed
 url: "http://gianlucaciocci.com"
