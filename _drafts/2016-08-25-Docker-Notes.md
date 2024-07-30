@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Docker - Notes
-date: 2016-08-25
+date: 2016-08-29
 tags: [Docker]
 ---
 
