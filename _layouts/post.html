@@ -24,11 +24,12 @@ layout: default
                 <footer class="entry-footer">
                     <div class="share-post">
                         <span>Share</span>
-                        <a class="fa-twitter" target="_blank" href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&amp;url={{ site.url }}{{ page.url }}"><span class="screen-reader-text">Twitter</span></a>
-                        <a class="fa-linkedin" target="_blank" href="http://linkedin.com/shareArticle?mini=true&amp;title={{ page.title | uri_escape }}&amp;url={{ site.url }}{{ page.url }}"><span class="screen-reader-text">LinkedIn</span></a>
-                        <a class="fa-envelope" href="mailto:?subject=gianlucaciocci.com - {{ page.title }}&body={{ site.url }}{{ page.url }}"><span class="screen-reader-text">Email</span></a>
-                        <a class="fa-facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}&amp;t={{ page.title | uri_escape }}"><span class="screen-reader-text">Facebook</span></a>
-                        <a class="fa-google-plus" target="_blank" href="http://plus.google.com/share?url={{ site.url }}{{ page.url }}"><span class="screen-reader-text">Google+</span></a>
+                        
+                        <a class="fa-brands fa-x-twitter" target="_blank" href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&amp;url={{ site.url }}{{ page.url }}"><span class="screen-reader-text">Twitter</span></a>
+                        <a class="fa-brands fa-linkedin" target="_blank" href="http://linkedin.com/shareArticle?mini=true&amp;title={{ page.title | uri_escape }}&amp;url={{ site.url }}{{ page.url }}"><span class="screen-reader-text">LinkedIn</span></a>
+                        <a class="fa-solid fa-envelope" href="mailto:?subject=gianlucaciocci.com - {{ page.title }}&body={{ site.url }}{{ page.url }}"><span class="screen-reader-text">Email</span></a>
+                        <a class="fa-brands fa-facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}&amp;t={{ page.title | uri_escape }}"><span class="screen-reader-text">Facebook</span></a>
+                        <a class="fa-brands fa-google-plus" target="_blank" href="http://plus.google.com/share?url={{ site.url }}{{ page.url }}"><span class="screen-reader-text">Google+</span></a>
                     </div><!-- .share-post -->
                     {% if page.tags.size > 0 %}
                     <div class="tag-links">

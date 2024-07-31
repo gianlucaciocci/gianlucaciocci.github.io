@@ -19,6 +19,9 @@ baseurl:
 
 sass:
   sass_dir: _sass
+  style: compressed
+
+include: ['_pages']
 
 plugins: 
  - jekyll-paginate
@@ -52,6 +55,7 @@ navigation:
 # disqus:
 
 # Author information - author info at the bottom of the post
+author_firstperson: "Me"
 author_name: "Gianluca Ciocci"
 author_bio: "Gianluca is a DevOps consultant spending most of his time on “getting things done” with automation - he believes that computers perform repetitive tasks and people solve problems."
 author_url:  "http://gianlucaciocci.com"
@@ -66,7 +70,7 @@ banner_image: #images/banner.jpeg
 mailchimp_url: #"//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
 endevops_enroll_url:
 # Social links in the site footer
-twitter_username: "gianlucaciocci"
+twitter_username: 
 facebook_username:
 googleplus_username:
 github_username: "gianlucaciocci"

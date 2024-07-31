@@ -9,23 +9,24 @@
     </section><!-- .widget -->
     {% endif %}
 
-    {% if site.author_bio and site.author_name %}
+    {% if site.author_bio and site.author_firstperson %}
     <section class="widget widget-text">
-        <h2 class="widget-title">About {{ site.author_name }}</h2>
+        <h2 class="widget-title">About {{ site.author_firstperson }}</h2>
         <p>{{ site.author_bio }}</p>
             {% if site.twitter_username %}
-            <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" class="fa-twitter square fill-horizontal"><span class="screen-reader-text">Twitter</span></a>
+            <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" class="square fill-horizontal"><span><i class="fa-brands fa-x-twitter"></i></span><span class="screen-reader-text">Twitter</span></a>
             {% endif %}
             {% if site.github_username %}
-            <a href="https://github.com/{{ site.github_username }}" target="_blank" class="fa-github-alt square fill-horizontal"><span class="screen-reader-text">GitHub</span></a>
+            <a href="https://github.com/{{ site.github_username }}" target="_blank" class="square fill-horizontal"><span><i class="fa-brands fa-github"></i></span><span class="screen-reader-text">GitHub</span></a>
             {% endif %}
             {% if site.linkedin_username %}
-            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" class="fa-linkedin square fill-horizontal"><span class="screen-reader-text">LinkedIn</span></a>
+            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" class="square fill-horizontal"><span><i class="fa-brands fa-linkedin"></i></span><span class="screen-reader-text">LinkedIn</span></a>
             {% endif %}
             {% if site.email_username %}
-            <a href="mailto:{{ site.email_username }}" class="fa-envelope square fill-horizontal"><span class="screen-reader-text">Email</span></a>
+            <a href="mailto:{{ site.email_username }}" class="square fill-horizontal"><span><i class="fa-solid fa-envelope"></i></span><span class="screen-reader-text">Email</span></a>
             {% endif %}
-            
+            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" class="square fill-horizontal"><span><i class="fa-solid fa-handshake"></i></span><span class="screen-reader-text">Hire Me</span></a>
+                
     </section><!-- .widget-text -->
     {% endif %}
 
@@ -89,7 +90,5 @@
             {% endfor %}
         </ul><!-- .recent-posts -->
     </section><!-- .widget-recent-posts -->
-
-
 
 </aside><!-- .sidebar -->
