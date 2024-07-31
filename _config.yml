@@ -73,16 +73,24 @@ endevops_enroll_url:
 twitter_username: 
 facebook_username:
 googleplus_username:
-github_username: "gianlucaciocci"
+github_username:
 codepen_username:
 dribbble_uername:
 medium_username:
 instagram_username:
 pinterest_username:
+youtube_username: "@remarked-blog"
+tumblr_username:
+behance_username:
+intented_stylesheet: /css/style.css
 linkedin_username: "gianlucaciocci"
 email_username: "me@gianlucaciocci.com"
 disqus: "gianlucaciocci"
 google_analytics: "gianlucaciocci"
+
+# Formspree Config @ https://formspree.io/
+formspree-id: "xovaddgv"
+
 
 # http://jekyllrb.com/docs/pagination/
 paginate: 5

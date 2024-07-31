@@ -28,11 +28,14 @@
             {% if site.pinterest_username %}
             <a href="http://www.pinterest.com/{{ site.pinterest_username }}" target="_blank" class="square fill-horizontal"><span><i class="fa-brands fa-pinterest"></i></span><span class="screen-reader-text">Pinterest</span></a>
             {% endif %}
+            {% if site.youtube_username %}
+            <a href="https://www.youtube.com/{{ site.youtube_username }}" target="_blank" class="square fill-horizontal"><span><i class="fa-brands fa-youtube"></i></span><span class="screen-reader-text">YouTube</span></a>
+            {% endif %}
             {% if site.linkedin_username %}
             <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" class="square fill-horizontal"><span><i class="fa-brands fa-linkedin"></i></span><span class="screen-reader-text">LinkedIn</span></a>
             {% endif %}
             {% if site.email_username %}
-            <a href="mailto:{{ site.email_username }}" class="square fill-horizontal"><span><i class="fa-solid fa-envelope"></i></span><span class="screen-reader-text">Email</span></a>
+            <a href="{{site.baseurl}}/contact" class="square fill-horizontal"><span><i class="fa-solid fa-envelope"></i></span><span class="screen-reader-text">Email</span></a>
             {% endif %}
             <a href="/about/" class="square fill-horizontal"><span><i class="fa-solid fa-address-card"></i></span><span class="screen-reader-text">About</span></a>
             <a class="square fill-horizontal" href="{{ site.baseurl }}/feed.xml" target="_blank"><span><i class="fa-solid fa-rss"></i></span><span class="screen-reader-text">RSS</span></a>

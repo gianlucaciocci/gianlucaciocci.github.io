@@ -14,18 +14,22 @@
         <h2 class="widget-title">About {{ site.author_firstperson }}</h2>
         <p>{{ site.author_bio }}</p>
             {% if site.twitter_username %}
-            <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" class="square fill-horizontal"><span><i class="fa-brands fa-x-twitter"></i></span><span class="screen-reader-text">Twitter</span></a>
+            <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" class="square fill-horizontal"><span><i class="fa-brands fa-x-twitter"></i></span></a>
             {% endif %}
             {% if site.github_username %}
-            <a href="https://github.com/{{ site.github_username }}" target="_blank" class="square fill-horizontal"><span><i class="fa-brands fa-github"></i></span><span class="screen-reader-text">GitHub</span></a>
+            <a href="https://github.com/{{ site.github_username }}" target="_blank" class="square fill-horizontal"><span><i class="fa-brands fa-github"></i></span></a>
             {% endif %}
             {% if site.linkedin_username %}
-            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" class="square fill-horizontal"><span><i class="fa-brands fa-linkedin"></i></span><span class="screen-reader-text">LinkedIn</span></a>
+            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" class="square fill-horizontal tooltip"><span><i class="fa-brands fa-linkedin"></i></span><span class="tooltiptext">Connect on</span></a>
+            {% endif %}
+            {% if site.youtube_username %}
+            <a href="https://www.youtube.com/{{ site.youtube_username }}" target="_blank" class="square fill-horizontal tooltip"><span><i class="fa-brands fa-youtube"></i></span><span class="tooltiptext">Watch on</span></a>
             {% endif %}
             {% if site.email_username %}
-            <a href="mailto:{{ site.email_username }}" class="square fill-horizontal"><span><i class="fa-solid fa-envelope"></i></span><span class="screen-reader-text">Email</span></a>
+            <a href="{{site.baseurl}}/contact" class="square fill-horizontal tooltip"><span><i class="fa-solid fa-envelope"></i></span><span class="tooltiptext">Email me</span></a>
             {% endif %}
-            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" class="square fill-horizontal"><span><i class="fa-solid fa-handshake"></i></span><span class="screen-reader-text">Hire Me</span></a>
+            <a href="{{site.baseurl}}/hireme" class="square fill-horizontal tooltip"><span><i class="fa-solid fa-file-signature"></i></span><span class="tooltiptext">Hire me</span></a>
+            <!-- <i class="fa-solid fa-handshake e"></i> -->
                 
     </section><!-- .widget-text -->
     {% endif %}
