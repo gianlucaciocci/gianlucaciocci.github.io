@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title:  Just gone live
 date:   2016-08-19
 banner_image: before-you-go-live.png
@@ -18,4 +18,5 @@ If you have any questions or you want to know details of the event, get in touch
 I am looking forward to seeing you there. Come and say hi.
 
 Gianluca
+
 

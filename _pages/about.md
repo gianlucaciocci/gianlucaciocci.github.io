@@ -1,9 +1,13 @@
 ---
 permalink: "/about/"
-layout: page
+layout: pages
 title: <i class="fa-solid fa-id-card"></i> Curriculum Vitae
 description: Who is Gianluca Ciocci? Find out more with his Curriculum Vitae 
 banner_image: aboutPage.jpg
+sitemap: 
+  include: true
+  lastmod: 2014-07-21
+  priority: 0.6
 ---
 
 **Gianluca Ciocci** has over 20 years of experience in coaching and leading Agile teams, focusing for the last few years on DevOps implementations.  

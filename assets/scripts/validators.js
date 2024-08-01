@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 /*eslint-env jquery*/
 
 // Jquery & Velocity JS included in GULP
@@ -306,7 +310,7 @@ $( "#contactForm" ).submit( function( e ) {
     $.ajax( {
 
         // Change the email address here:
-        url: "https://formspree.io/f/xovaddgv",
+        url: "https://formspree.io/f/{{site.formspree-id}}",
         method: "POST",
         data: $( this ).serialize(),
         dataType: "json",

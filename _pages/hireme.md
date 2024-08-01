@@ -1,9 +1,10 @@
 ---
 permalink: "/hireme/"
-layout: page
+layout: pages
 title: Hire me
 description: Getting in touch to discuss future collaborations
-
+sitemap:
+  exclude: true
 ---
 
 

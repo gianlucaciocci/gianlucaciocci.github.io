@@ -1,9 +1,10 @@
 ---
 permalink: "/contact/"
-layout: page
+layout: pages
 title: Contact me
 description: Getting in touch with me
-
+sitemap:
+  exclude: true
 ---
 
 

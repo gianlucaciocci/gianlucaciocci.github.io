@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: New Blog Layout
 date: 2024-07-30
 banner_image: ideas.jpg

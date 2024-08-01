@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title:  "DevOps: a culture journey"
 date:   2016-10-22
 banner_image: rowing.jpg

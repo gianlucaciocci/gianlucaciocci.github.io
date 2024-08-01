@@ -26,11 +26,13 @@ include: ['_pages']
 plugins: 
  - jekyll-paginate
  - jekyll-seo-tag
- - jekyll-sitemap
  - jekyll-feed
  - jekyll-redirect-from
  - jemoji
  - jekyll-mentions
+
+
+# - jekyll-sitemap
 
 # BLOG POST CONFIG
 excerpt_separator: <!--more-->
@@ -45,11 +47,35 @@ navigation:
 - text: About
   url: /about/
 - text: Archives
-  url: /tags/
+  url: /blog/
 - text: Cheatsheets
   url: /cheatsheets/
-# - text: Enterprise DevOps Community
-#   url: /entdevops/
+
+
+# DEFAULT PERMALINKS
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /blog/:title/
+  # -
+  #   scope:
+  #     path: ""
+  #     type: "pages"
+  #   values:
+  #     sitemap:
+  #       exclude: 'yes'
+  # -
+  #   scope:
+  #     path: ""
+  #     type: "*"
+  #   values:
+  #     sitemap:
+  #       exclude: 'yes'
+
 
 # The shortname for your Disqus site to enable comments.
 # disqus:
@@ -97,7 +123,11 @@ paginate: 5
 paginate_path: '/blog/page:num/'
 
 
-permalink: pretty
+
+
+
+#permalink: pretty
+
 markdown: kramdown
 highlighter: rouge
 kramdown:
