@@ -1,24 +1,37 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site title
-title: "{REMARKED}"
+#SEO meta tags
+title: "{REMARKED} | AI/ML, DevOps & Cloud Tech Notebooks"
+description: "Explore Gianluca's curated notes on AI/ML, DevOps, cloud tech, and software engineering. A personal knowledge base of daily discoveries and practical industry insights."
 
-# A description of your site for social meta tag, search engines, and feed.xml
-description: "Blogging taking notes"
 
-# Tagline near the site title
-tagline: "Thoughts, notes and ideas"
+blog: 
+  title: "{REMARKED}"
+  description: "Blogging taking notes"
+  tagline: "Thoughts, experiences and ideas"
+
 
 # The subpath of your site, e.g. /blog, for generating urls
 baseurl: 
 
 sass:
   sass_dir: _sass
+  style: compressed
+
+include: ['_pages']
+
+plugins: 
+ - jekyll-paginate
+ - jekyll-seo-tag
+ - jekyll-feed
+ - jekyll-redirect-from
+ - jemoji
+ - jekyll-mentions
+
+
+# - jekyll-sitemap
+
+# BLOG POST CONFIG
+excerpt_separator: <!--more-->
 
 # The base hostname & protocol of your site for where absolute urls are needed
 url: "http://gianlucaciocci.com"
@@ -29,17 +42,42 @@ navigation:
   url: /
 - text: About
   url: /about/
-- text: Archives
-  url: /tags/
-- text: Cheatsheets
-  url: /cheatsheets/
-- text: Enterprise DevOps Community
-  url: /entdevops/
+- text: Archive
+  url: /blog/
+# - text: Cheatsheets
+#   url: /cheatsheets/
+
+
+# DEFAULT PERMALINKS
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /blog/:title/
+  # -
+  #   scope:
+  #     path: ""
+  #     type: "pages"
+  #   values:
+  #     sitemap:
+  #       exclude: 'yes'
+  # -
+  #   scope:
+  #     path: ""
+  #     type: "*"
+  #   values:
+  #     sitemap:
+  #       exclude: 'yes'
+
 
 # The shortname for your Disqus site to enable comments.
 # disqus:
 
 # Author information - author info at the bottom of the post
+author_firstperson: "Me"
 author_name: "Gianluca Ciocci"
 author_bio: "Gianluca is a DevOps consultant spending most of his time on “getting things done” with automation - he believes that computers perform repetitive tasks and people solve problems."
 author_url:  "http://gianlucaciocci.com"
@@ -47,33 +85,45 @@ author_location: "London, UK"
 author_image: /images/authorimage.jpg
 
 # Sidebar Add banner
-banner_url: "http://meetup.com/entdevops"
-banner_image: images/banner.jpeg
+banner_url: #"http://meetup.com/entdevops"
+banner_image: #images/banner.jpeg
 
 # Sidebar newsletter widget - add your form action url for MailChimp signup form here
 mailchimp_url: #"//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
 endevops_enroll_url:
 # Social links in the site footer
-twitter_username: "gianlucaciocci"
+twitter_username: 
 facebook_username:
 googleplus_username:
-github_username: "gianlucaciocci"
+github_username:
 codepen_username:
 dribbble_uername:
 medium_username:
 instagram_username:
 pinterest_username:
+youtube_username: "@remarked-blog"
+tumblr_username:
+behance_username:
+intented_stylesheet: /css/style.css
 linkedin_username: "gianlucaciocci"
 email_username: "me@gianlucaciocci.com"
 disqus: "gianlucaciocci"
 google_analytics: "gianlucaciocci"
 
+# Formspree Config @ https://formspree.io/
+formspree-id: "xovaddgv"
+
+
 # http://jekyllrb.com/docs/pagination/
 paginate: 5
 paginate_path: '/blog/page:num/'
-plugins: [jekyll-paginate]
 
-permalink: pretty
+
+
+
+
+#permalink: pretty
+
 markdown: kramdown
 highlighter: rouge
 kramdown:
