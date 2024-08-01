@@ -23,8 +23,6 @@ layout: null
 # DISALLOW
 User-agent: *
 
-Disallow: {{site.url}}/contact
-Disallow: {{site.url}}/hireme
 Disallow: /assets
 
 # SITEMAPS
