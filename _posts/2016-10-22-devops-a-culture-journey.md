@@ -3,7 +3,7 @@ layout: posts
 title:  "DevOps: a culture journey"
 date:   2016-10-22
 banner_image: rowing.jpg
-tableofcontent: true
+tableofcontent: false
 tags: [DevOps, Culture]
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: tags
-title: Post Archives
+title: Posts Archive
 permalink: "/blog/"
 sitemap:
   include: true

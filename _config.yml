@@ -1,18 +1,14 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site title
-title: "{REMARKED}"
+#SEO meta tags
+title: "{REMARKED} | AI/ML, DevOps & Cloud Tech Notebooks"
+description: "Explore Gianluca's curated notes on AI/ML, DevOps, cloud tech, and software engineering. A personal knowledge base of daily discoveries and practical industry insights."
 
-# A description of your site for social meta tag, search engines, and feed.xml
-description: "Blogging taking notes"
 
-# Tagline near the site title
-tagline: "Thoughts, notes and ideas"
+blog: 
+  title: "{REMARKED}"
+  description: "Blogging taking notes"
+  tagline: "Thoughts, experiences and ideas"
+
 
 # The subpath of your site, e.g. /blog, for generating urls
 baseurl: 
@@ -46,10 +42,10 @@ navigation:
   url: /
 - text: About
   url: /about/
-- text: Archives
+- text: Archive
   url: /blog/
-- text: Cheatsheets
-  url: /cheatsheets/
+# - text: Cheatsheets
+#   url: /cheatsheets/
 
 
 # DEFAULT PERMALINKS

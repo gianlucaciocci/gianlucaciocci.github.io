@@ -1,7 +1,7 @@
 ---
 permalink: "/about/"
 layout: pages
-title: <i class="fa-solid fa-id-card"></i> Curriculum Vitae
+title: Gianluca's Curriculum Vitae
 description: Who is Gianluca Ciocci? Find out more with his Curriculum Vitae 
 banner_image: aboutPage.jpg
 sitemap: 
@@ -19,4 +19,4 @@ Never hesitate to introduce yourself to him when you are around, okay? He is nic
 
 *Thank You for reading!*
 
-<i class="fa-solid fa-id-card"></i> Find out more looking at my CV
+CV is coming
